@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Junge&family=Roboto:wght@300&display=swap");
+
+html {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+}
+
+main {
+  margin: auto;
+  font-size: 1rem;
+  max-width: 60rem;
+}
+
+h1,
+h2 {
+  font-family: "Junge", serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#top-div {
+  position: relative;
+  text-align: center;
+  padding: 0;
+}
+
+#title-div {
+  padding: 1rem;
+  width: 30rem;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20rem;
+}
+
+.content-div,
+.content-inner-centered {
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.content-inner-centered {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.content-div > img {
+  max-width: 100%;
+}
+
+.side-content,
+.side-content-invert {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  padding-top: 3rem;
+}
+
+.side-content > div,
+.side-content-invert > div {
+  padding: 8rem;
+  flex-grow: 1;
+}
+.side-content > img,
+.side-content-invert > img {
+  max-width: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+.side-content-invert {
+  flex-flow: row-reverse;
+}
