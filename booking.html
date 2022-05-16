@@ -44,77 +44,104 @@
       </nav>
     </header>
     <main>
-      <h2>book your epic adventure today!</h2>
-      <form id="contact-form">
-        <div>
-          <label for="contactFName">first name</label>
-          <input id="contactFName" type="text" name="contactFName" />
-          <label for="contactLName">last name</label>
-          <input id="contactLName" type="text" name="contactLName" />
-        </div>
-        <div>
-          <label for="contactEmailAddress">email address</label>
-          <input
-            id="contactEmailAddress"
-            name="contactEmailAddress"
-            type="text"
-          />
-        </div>
-        <div>
-          <label for="contactPhone">phone number</label>
-          <input id="contactPhone" name="contactPhone" type="text" />
-          <label for="contactGuests">guests</label>
-          <input id="contactGuests" name="contact-guests" type="text" />
-        </div>
-      </form>
-      <div id="roomDisplay">
-        <div class="roomItem">
-          <div class="roomText">
-            <h3>Text</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="roomAmenities">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-          <div class="roomImage"><img src="" alt="" /></div>
-        </div>
-        <div class="roomItem">
-          <div class="roomText">
-            <h3>Text</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="roomAmenities">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-          <div class="roomImage"><img src="" alt="" /></div>
-        </div>
-        <div class="roomItem">
-          <div class="roomText">
-            <h3>Text</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="roomAmenities">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-          <div class="roomImage"><img src="" alt="" /></div>
+      <div class="img-full-width" id="top-div">
+        <img src="img/ocean-road.jpg" alt="" />
+        <div id="title-div">
+          <h1>book your next epic adventure today!</h1>
         </div>
       </div>
+      <div id="room-display">
+        <div id="room-container">
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="room-img"><img src="img/building.jpg" alt="" /></div>
+          </div>
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="room-img">
+              <img src="img/ferris-wheel.jpg" alt="" />
+            </div>
+          </div>
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="room-img">
+              <img src="img/ferris-wheel.jpg" alt="" />
+            </div>
+          </div>
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Text</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="room-img">
+              <img src="img/ferris-wheel.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact-form">
+        <form id="contact" method="POST">
+          <label for="contactFName">first name</label>
+          <label for="contactLName">last name</label>
+          <input id="contactFName" type="text" name="contactFName" />
+          <input id="contactLName" type="text" name="contactLName" />
+          <label for="contactGuests">guests</label>
+          <label for="contactPhone">phone number</label>
+          <input id="contactGuests" name="contact-guests" type="number" />
+          <input id="contactPhone" name="contactPhone" type="tel" />
+          <label for="contactEmail">email address</label>
+          <input id="contactEmail" name="contactEmail" type="email" />
+          <div id="buttonDiv">
+            <button>Book NOW!</button>
+          </div>
+        </form>
+      </div>
     </main>
-    <footer>&copy; T.A. Turner, 2022</footer>
+    <footer>&copy; Rellsoft Co., 2022</footer>
   </body>
 </html>
