@@ -200,36 +200,41 @@ iframe {
 
 .room-item {
   display: flex;
-  flex-wrap: mowrap;
+  flex-wrap: nowrap;
   border-color: red;
   height: 10rem;
   width: 90%;
-  padding-bottom: 2rem;
   margin: auto;
+
+  margin-bottom: 2rem;
 }
 
 .room-item > * {
   flex: 1 0 auto;
+  background-color: rgb(255, 255, 255);
 }
 
 .room-text {
-  background-color: rgb(255, 255, 255);
-  padding: 2rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  max-width: 50%;
+  max-height: 100%;
+
+  overflow-wrap: break-word;
 }
 
 .room-amenities {
   text-align: center;
   background-color: rgb(255, 255, 255);
-  flex-grow: 0;
-  flex-shrink: 1;
   width: 10%;
   padding: 1rem;
-  padding-right: 4rem;
   margin-right: 1rem;
+
+  overflow-wrap: break-word;
 }
 
 .room-img {
-  width: 15rem;
+  width: 20%;
   background-color: teal;
   margin-left: auto;
   margin-right: 0;
@@ -421,6 +426,55 @@ iframe {
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+
+  #room-display {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .room-item {
+    margin: 0;
+    width: 100%;
+
+    margin-bottom: 1rem;
+  }
+
+  .room-item > * {
+    flex: 1 1 auto;
+
+    text-align: center;
+  }
+
+  .room-text {
+    padding: 1rem;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    max-width: 60%;
+  }
+
+  .room-text p {
+    padding-bottom: 0.3rem;
+  }
+
+  .room-text a {
+    font-size: 1rem;
+  }
+
+  .room-text button {
+    margin-top: 20%;
+    font-size: 0.9rem;
+  }
+
+  .room-amenities {
+    display: none;
+  }
+
+  .room-img {
+    width: 40%;
+    background-color: teal;
+    flex-grow: 0;
+    margin: 0;
   }
 
   .staff-content-div {
