@@ -121,7 +121,7 @@ iframe {
 }
 
 #title-div-home {
-  width: 50%;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -144,18 +144,17 @@ iframe {
 #sidebyside-container {
   padding-top: 0;
   padding-bottom: 0;
-
-  width: 90%rem;
+  width: 60%;
   margin: auto;
 }
 
 #staff-div {
   display: flex;
+  flex-wrap: wrap;
   padding: 2rem;
-  align-items: center;
   text-align: center;
   background-color: rgb(227, 247, 255);
-  height: 20rem;
+  height: 100%;
 }
 
 #room-display {
@@ -226,10 +225,16 @@ iframe {
 .room-amenities {
   text-align: center;
   background-color: rgb(255, 255, 255);
-  width: 10%;
   padding: 1rem;
   margin-right: 1rem;
   overflow-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+.room-amenities > img {
+  max-width: 10%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .room-img {
@@ -249,9 +254,7 @@ iframe {
 .staff-content-div {
   line-height: 1.5rem;
   width: 100%;
-
   display: flex;
-
   margin-bottom: 10rem;
   margin-top: 10rem;
 }
@@ -271,14 +274,16 @@ iframe {
 }
 
 .staff-div-item {
+  justify-content: center;
   margin: 0.5rem;
+  flex: 1 1 20rem;
 }
 
 .staff-div-item > img {
   display: inline-block;
   object-fit: cover;
-  max-height: 100%;
-  width: 50%;
+  max-width: 15rem;
+
   margin-bottom: 1rem;
   border-radius: 50%;
 }
@@ -342,6 +347,7 @@ iframe {
   align-items: center;
   text-align: center;
   height: 20rem;
+  width: 100%;
 }
 
 .side-content > div,
@@ -414,9 +420,9 @@ iframe {
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   html {
-    font-size: 18px;
+    font-size: 12px;
     margin: 0;
   }
 
@@ -442,14 +448,11 @@ iframe {
   }
 
   #top-div {
-    height: 10rem;
   }
 
   #title-div-home {
     padding: 0;
-    width: 90%;
-    height: 50%;
-    margin: auto;
+    width: 80%;
   }
 
   #title-div-home h1,
@@ -467,6 +470,7 @@ iframe {
 
   #sidebyside-container {
     padding: 0;
+    margin: auto;
     width: 100%;
   }
 
@@ -487,10 +491,13 @@ iframe {
   .room-text {
     padding-left: 1rem;
     text-align: center;
-
     order: 2;
     max-width: 100%;
   }
+
+  /* .room-text p {
+    padding: 0.5rem;
+  } */
 
   .room-text > * {
     margin: 0.5rem;
@@ -511,7 +518,10 @@ iframe {
     height: 20rem;
   }
 
-  .room-text {
+  .room-amenities > img {
+    max-width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .staff-content-div {
@@ -554,18 +564,232 @@ iframe {
     padding-bottom: 2rem;
   }
 
+  .content-inner-centered h2 {
+    font-size: 1.5rem;
+  }
+
   .side-content,
   .side-content-invert {
     display: flex;
     align-items: center;
     text-align: center;
-    height: 20rem;
+    height: 15rem;
   }
 
   .side-content > div,
   .side-content-invert > div {
+    font-size: 0.9rem;
     height: auto;
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .side-content img,
+  .side-content-invert img {
+  }
+
+  .side-content > div > button,
+  .side-content-invert > div > button {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .side-content > div > p,
+  .side-content-invert > div > p {
+    margin-top: 1rem;
+  }
+
+  .gallery-container {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-container .gallery-item {
+    height: 10rem;
+    width: 10rem;
+    flex: 1 0 auto;
+    margin: 0.1rem;
+  }
+
+  .gallery-container .gallery-item > img {
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  html {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+
+  form {
+    padding: 20%;
+  }
+
+  form input {
+    height: 2rem;
+  }
+
+  #top-div {
+  }
+
+  #title-div-home {
+    padding: 0;
+    width: 80%;
+  }
+
+  #title-div-home h1,
+  #title-div-home p {
+    margin: auto;
+    padding: 0;
+    line-height: 2rem;
+  }
+
+  #title-div-home h1 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #sidebyside-container {
+    padding: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  #staff-div {
+    display: flex;
+
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .room-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+  }
+
+  .room-text {
+    padding-left: 1rem;
+    text-align: center;
+    order: 2;
+    max-width: 100%;
+  }
+
+  /* .room-text p {
+    padding: 0.5rem;
+  } */
+
+  .room-text > * {
+    margin: 0.5rem;
+  }
+
+  .room-amenities {
+    order: 3;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .room-img {
+    order: 1;
+    flex-grow: 1;
+    margin-right: auto;
+    width: 100%;
+    height: 20rem;
+  }
+
+  .room-amenities > img {
+    max-width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .staff-content-div {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .staff-content-inner {
+    padding: 0 10%;
+  }
+
+  .staff-div-item {
+    flex: 0 0 auto;
+  }
+
+  .staff-div-item img {
+    margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+
+  .content-div,
+  .content-inner-centered {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .content-div > .content-inner-div,
+  .content-inner-centered {
+    padding: 0 10%;
+  }
+
+  .content-inner-div p {
+    text-indent: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-inner-centered {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .content-inner-centered h2 {
+    font-size: 1.5rem;
+  }
+
+  .side-content,
+  .side-content-invert {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 15rem;
+  }
+
+  .side-content > div,
+  .side-content-invert > div {
+    font-size: 0.9rem;
+    height: auto;
+    padding: 0.5rem;
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .side-content img,
+  .side-content-invert img {
   }
 
   .side-content > div > button,
@@ -656,6 +880,8 @@ iframe {
   .room-text {
     padding-left: 1rem;
     text-align: center;
+    order: 2;
+    max-width: 100%;
   }
 
   .room-text > * {
@@ -677,9 +903,10 @@ iframe {
     height: 20rem;
   }
 
-  .room-text {
-    order: 2;
-    max-width: 100%;
+  .room-amenities > img {
+    max-width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .staff-content-div {
@@ -717,7 +944,7 @@ iframe {
 
   .content-inner-div p {
     text-indent: 2rem;
-    margin: 0rem;
+    margin-bottom: 0.5rem;
   }
 
   .content-inner-centered {
@@ -853,6 +1080,12 @@ iframe {
     max-width: 100%;
   }
 
+  .room-amenities > img {
+    max-width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .staff-content-div {
     display: flex;
     margin-top: 5rem;
@@ -888,7 +1121,7 @@ iframe {
 
   .content-inner-div p {
     text-indent: 2rem;
-    margin: 0rem;
+    margin-bottom: 0.5rem;
   }
 
   .content-inner-centered {
@@ -1010,6 +1243,12 @@ iframe {
     margin: 0;
   }
 
+  .room-amenities > img {
+    max-width: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .room-img {
     order: 1;
     flex-grow: 1;
@@ -1054,8 +1293,9 @@ iframe {
 
   .content-inner-div p {
     text-indent: 2rem;
-    margin: 0rem;
+    margin-bottom: 0.5rem;
   }
+
   .content-inner-centered {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1113,6 +1353,17 @@ iframe {
     width: 40rem;
   }
 
+  #title-div-home {
+    padding: 1rem;
+    width: 80%;
+  }
+
+  #title-div-home h1,
+  #title-div-home p {
+    margin: 0;
+    padding: 1rem;
+  }
+
   .room-item {
     flex-direction: column;
     flex-wrap: wrap;
@@ -1134,6 +1385,64 @@ iframe {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .room-amenities > img {
+    max-width: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .room-img {
+    order: 1;
+    flex-grow: 1;
+    margin-right: auto;
+    width: 100%;
+    height: 20rem;
+  }
+
+  .room-text {
+    order: 2;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1960px) {
+  #title-div-home {
+    width: 80%;
+  }
+
+  #sidebyside-container {
+    width: 40rem;
+  }
+
+  .room-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+  }
+
+  .room-text {
+    padding-left: 1rem;
+    text-align: center;
+  }
+
+  .room-text > * {
+    margin: 0.5rem;
+  }
+
+  .room-amenities {
+    order: 3;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .room-amenities > img {
+    max-width: 5%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .room-img {

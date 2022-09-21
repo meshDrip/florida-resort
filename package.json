@@ -1,0 +1,29 @@
+{
+  "name": "resorts-at-oceanview",
+  "version": "1.0.0",
+  "description": "A website for a non-existant resort in Florida to display my skills in basic HTML, CSS, and JavaScript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meshDrip/florida-resort.git"
+  },
+  "keywords": [
+    "practice",
+    "junior"
+  ],
+  "author": "Terrell Turner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meshDrip/florida-resort/issues"
+  },
+  "homepage": "https://github.com/meshDrip/florida-resort#readme",
+  "dependencies": {
+    "firebase": "^9.10.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0"
+  }
+}
