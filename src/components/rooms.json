@@ -1,22 +1,22 @@
 [
   {
     "roomID": "0",
-    "image": "./img/rooms/blue-room.jpg",
+    "image": "./blue-room.jpg",
     "roomTitle": "Beach Suite",
     "roomDescription": "The package we're famous for, our Beach Suite gives you everything you need for your home away from home during your stay. The suites come with a single queen-sized bed, walk-in tub with jacuzzi jets, and world-class room service always there when you need them. Let your troubles melt away!",
     "amenities": [
       {
-        "amenityImg": "./img/rooms/amenities/bed.svg",
+        "amenityImg": "./bed.svg",
         "amenityTitle": "Luxury Queen Bed",
         "amenityImgAlt": "This room comes with a queen bed, available in both memory foam and natural latex beds (upon request)."
       },
       {
-        "amenityImg": "./img/rooms/amenities/coffee-cup.svg",
+        "amenityImg": "./coffee-cup.svg",
         "amenityTitle": "Complimentary Refreshments",
         "amenityImgAlt": "Enjoy free continental breakfast and unlimited coffee refills during your stay!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/tv-remote.svg",
+        "amenityImg": "./tv-remote.svg",
         "amenityTitle": "Complete Internet TV Package",
         "amenityImgAlt": "This room comes equipped with a 62\" OLED TV with access to many streaming services!"
       }
@@ -24,22 +24,22 @@
   },
   {
     "roomID": "1",
-    "image": "./img/rooms/double-room.jpg",
+    "image": "./double-room.jpg",
     "roomTitle": "Double Family Suite",
     "roomDescription": " The family that stays together saves together! Enjoy the same amenities as our Beach Suite rooms and two queen-sized beds to make sure everyone gets enough shuteye. Comes with a free diner coupon worth $25!",
     "amenities": [
       {
-        "amenityImg": "./img/rooms/amenities/bed.svg",
+        "amenityImg": "./bed.svg",
         "amenityTitle": "Double Queen Bed",
         "amenityImgAlt": "This room comes with 2 double beds, either memory foam or latex (available upon request). Enjoy twice the amount of luxury!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/coffee-cup.svg",
+        "amenityImg": "./coffee-cup.svg",
         "amenityTitle": "Complimentary Refreshments",
         "amenityImgAlt": "Enjoy free continental breakfast and unlimited coffee refills during your stay!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/tv-remote.svg",
+        "amenityImg": "./tv-remote.svg",
         "amenityTitle": "Complete Internet TV Package",
         "amenityImgAlt": "This room comes equipped with a 62\" OLED TV with access to many streaming services!"
       }
@@ -47,37 +47,37 @@
   },
   {
     "roomID": "2",
-    "image": "./img/rooms/cozy-room.jpg",
+    "image": "./cozy-room.jpg",
     "roomTitle": "Hideaway Suite",
     "roomDescription": "All of the room and comfort of all our other rooms, but with a warm and inviting wood interior and lush green garden patio to help you unwind. Meditate in the garden or pour yourself a glass of complimentary champagne from the fridge, you've earned this.",
     "amenities": [
       {
-        "amenityImg": "./img/rooms/amenities/bed.svg",
+        "amenityImg": "./bed.svg",
         "amenityTitle": "Double Queen Bed",
         "amenityImgAlt": "This room comes with 2 double beds, either memory foam or latex (available upon request). Enjoy twice the amount of luxury!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/coffee-cup.svg",
+        "amenityImg": "./coffee-cup.svg",
         "amenityTitle": "Complimentary Refreshments",
         "amenityImgAlt": "Enjoy free continental breakfast and unlimited coffee refills during your stay!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/tv-remote.svg",
+        "amenityImg": "./tv-remote.svg",
         "amenityTitle": "Complete Internet TV Package",
         "amenityImgAlt": "This room comes equipped with a 62\" OLED TV with access to many streaming services!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/wine-glass.svg",
+        "amenityImg": "./wine-glass.svg",
         "amenityTitle": "Complimentary Beverages",
         "amenityImgAlt": "This room comes with complimentary alcohol in the minifridge! (Must present valid ID upon check-in)"
       },
       {
-        "amenityImg": "./img/rooms/amenities/garden.svg",
+        "amenityImg": "./garden.svg",
         "amenityTitle": "Personal Garden",
         "amenityImgAlt": "A personal garden filled with greenery and peaceful art, maintained daily. Hot towels available upon request!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/first-class-room-service.svg",
+        "amenityImg": "./first-class-room-service.svg",
         "amenityTitle": "Premium Room Service",
         "amenityImgAlt": "In addition to our standard world-class room service, enjoy a special menu and complimentary meals on us!"
       }
@@ -85,32 +85,32 @@
   },
   {
     "roomID": "3",
-    "image": "./img/rooms/open-room.jpg",
+    "image": "./open-room.jpg",
     "roomTitle": "Honeymoon Suite",
     "roomDescription": "This room is available in multiple styles! Our Fresh & Clean and Love Study rooms are currently available to book for you and your partner's delight. Unwind in our luxuriant honeymoon suites with complimentary champagne and 25% off of a steak dinner for two.",
     "amenities": [
       {
-        "amenityImg": "./img/rooms/amenities/bed.svg",
+        "amenityImg": "./bed.svg",
         "amenityTitle": "Double Queen Bed",
         "amenityImgAlt": "This room comes with 2 double beds, either memory foam or latex (available upon request). Enjoy twice the amount of luxury!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/coffee-cup.svg",
+        "amenityImg": "./coffee-cup.svg",
         "amenityTitle": "Complimentary Refreshments",
         "amenityImgAlt": "Enjoy free continental breakfast and unlimited coffee refills during your stay!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/tv-remote.svg",
+        "amenityImg": "./tv-remote.svg",
         "amenityTitle": "Complete Internet TV Package",
         "amenityImgAlt": "This room comes equipped with a 62\" OLED TV with access to many streaming services!"
       },
       {
-        "amenityImg": "./img/rooms/amenities/wine-glass.svg",
+        "amenityImg": "./wine-glass.svg",
         "amenityTitle": "Complimentary Beverages",
         "amenityImgAlt": "This room comes with complimentary alcohol in the minifridge! (Must present valid ID upon check-in)"
       },
       {
-        "amenityImg": "./img/rooms/amenities/first-class-room-service.svg",
+        "amenityImg": "./first-class-room-service.svg",
         "amenityTitle": "Premium Room Service",
         "amenityImgAlt": "In addition to our standard world-class room service, enjoy a special menu and complimentary meals on us!"
       }

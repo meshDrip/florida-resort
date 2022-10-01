@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+
+  <meta property="og:title" content="Resorts at Oceanview" />
+  <meta property="og:description" content="Recreation of a simple website for a resort in Florida." />
+
+  <meta property="og:url" content="https://rellsoft.dev" />
+  <link url="canonical" hfref="https://rellsoft.dev/index.html" />
+
+  <meta property="og:image" content="https://resortsatoceanview.azurewebsites.net/img/ocean-shore-large-2.jpg" />
+  <meta property="og:image:alt"
+    content="A beautiful coastal picture of Florida, the sea is an incredible deep blue which meets a white sand beach. Past the shore, dozens of luxury high rise buildings stand as a stark constrast to the sea before them." />
+
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:image" content="./img/florida_shore.jpg" />
+
+  <link rel="icon" href="./public/favicon.svg" />
+  <title>Resorts at Oceanview</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Book Online</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="img-full-width" id="top-div-booking">
+      <img src="./ocean-road.jpg" alt="" />
+      <div id="title-div">
+        <h2>book your next epic adventure today!</h2>
+      </div>
+    </div>
+    <div id="room-display">
+      <!-- <div id="room-container">
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Beach Suite</h3>
+              <p>
+                The package we're famous for, our Beach Suite gives you
+                everything you need for your home away from home during your
+                stay. The suites come with a single queen-sized bed, walk-in tub
+                with jacuzzi jets, and world-class room service always there
+                when you need them. Let your troubles melt away!
+              </p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="./img/rooms/amenities/bed.svg" alt="" />
+              <img src="./img/rooms/amenities/coffee-cup.svg" alt="" />
+              <img src="./img/rooms/amenities/tv-remote.svg" alt="" />
+            </div>
+            <div class="room-img">
+              <img src="./img/rooms/blue-room.jpg" alt="" />
+            </div>
+          </div>
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Double Family Suite</h3>
+              <p>
+                The family that stays together saves together! Enjoy the same
+                amenities as our Beach Suite rooms and two queen-sized beds to
+                make sure everyone gets enough shuteye. Comes with a free diner
+                coupon worth $25!
+              </p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="./img/rooms/amenities/bed-double.svg" alt="" />
+              <img src="./img/rooms/amenities/coffee-cup.svg" alt="" />
+              <img src="./img/rooms/amenities/tv-remote.svg" alt="" />
+            </div>
+            <div class="room-img">
+              <img src="./img/rooms/double-room.jpg" alt="" />
+            </div>
+          </div>
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Hideaway Suite</h3>
+              <p>
+                All of the room and comfort of all our other rooms, but with a
+                warm and inviting wood interior and lush green garden patio to
+                help you unwind. Meditate in the garden or pour yourself a glass
+                of complimentary champagne from the fridge, you've earned this.
+              </p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="./img/rooms/amenities/bed.svg" alt="" />
+              <img src="./img/rooms/amenities/coffee-cup.svg" alt="" />
+              <img src="./img/rooms/amenities/tv-remote.svg" alt="" />
+              <img src="./img/rooms/amenities/wine-glass.svg" alt="" />
+              <img src="./img/rooms/amenities/garden.svg" alt="" />
+              <img src="" alt="" />
+            </div>
+            <div class="room-img">
+              <img src="./img/rooms/cozy-room.jpg" alt="" />
+            </div>
+          </div>
+          <div class="room-item">
+            <div class="room-text">
+              <h3>Honeymoon Suite</h3>
+              <p>
+                This room is available in multiple styles! Our Fresh & Clean and
+                Love Study rooms are currently available to book for you and
+                your partner's delight. Unwind in our luxuriant honeymoon suites
+                with complimentary champagne and 25% off of a steak dinner for
+                two.
+              </p>
+            </div>
+            <div class="room-amenities">
+              <h3>Amenities</h3>
+              <img src="./img/rooms/amenities/bed.svg" alt="" />
+              <img src="./img/rooms/amenities/coffee-cup.svg" alt="" />
+              <img src="./img/rooms/amenities/tv-remote.svg" alt="" />
+              <img src="./img/rooms/amenities/wine-glass.svg" alt="" />
+              <img
+                src="./img/rooms/amenities/first-class-room-service.svg"
+                alt=""
+              />
+            </div>
+            <div class="room-img">
+              <img src="./img/rooms/open-room.jpg" alt="" />
+            </div>
+          </div>
+        </div> -->
+    </div>
+    <div id="contact-form">
+      <form id="contact" method="POST">
+        <label for="contactFName">first name</label>
+        <label for="contactLName">last name</label>
+        <input id="contactFName" type="text" name="contactFName" />
+        <input id="contactLName" type="text" name="contactLName" />
+        <label for="contactGuests">guests</label>
+        <label for="contactPhone">phone number</label>
+        <input id="contactGuests" name="contact-guests" type="number" />
+        <input id="contactPhone" name="contactPhone" type="tel" />
+        <label for="contactEmail">email address</label>
+        <input id="contactEmail" name="contactEmail" type="email" />
+        <div id="buttonDiv">
+          <a href=""><button class="btn">book NOW!</button></a>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>Rellsoft&copy;, <span id="copyright">1992</span></footer>
+</body>
+
+</html>
