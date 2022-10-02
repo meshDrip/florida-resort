@@ -8,6 +8,5 @@ export default function importAll(r) {
 
 export function currentYear() {
   const copyright = document.querySelector("#copyright");
-  console.log(copyright);
   copyright.innerText = new Date().getFullYear();
 }
